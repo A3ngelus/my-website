@@ -1,0 +1,19 @@
+/* notes */
+:root {
+    background-image: url('/img/partchment.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+header {
+    font-family: 'BlackChancery';
+    color: #8f0000;
+    font-size: 48px;
+    margin-left: 20px;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
