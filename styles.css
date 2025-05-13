@@ -1,19 +1,51 @@
 /* notes */
+@font-face {
+    font-family: 'BlackChancery';
+    src: url('../Fonts/BlackChancery.regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OldeEnglish Regular';
+    src: url('../fonts/OldeEnglish.ttf') format('truetype');
+}
+
 :root {
     background-image: url('/img/partchment.jpg');
     background-size: 100% 100%;
     background-attachment: fixed;
 }
 
+/* The "Olde English" and "BlackChancery" is not working as intended. I have the font on my computer but it is not being utilized on the website. */
 header {
-    font-family: 'BlackChancery';
+    font-family: 'Olde Enlglish', 'Trebuchet MS', Arial;
     color: #8f0000;
     font-size: 48px;
     margin-left: 20px;
 }
 
+.dps {
+    color: #b90a8e;
+}
+
+.tank {
+    color: #b90a8e;
+}
+
+.healer {
+    color: #b90a8e;
+}
+
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times;
     font-size: 20px;
     color: rgb(0, 0, 0);
+}
+
+section>h2 {
+    font-family: 'BlackChancery', Times;
+    color: #8f0000;
+}
+
+p::first-line {
+    font-weight: bold;
 }
