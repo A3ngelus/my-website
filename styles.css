@@ -1,17 +1,17 @@
 /* notes */
 @font-face {
     font-family: 'BlackChancery';
-    src: url('../Fonts/BlackChancery.regular.ttf') format('truetype');
+    src: url('Fonts/BlackChancery.regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'OldeEnglish Regular';
-    src: url('../fonts/OldeEnglish.ttf') format('truetype');
+    src: url('onts/OldeEnglish.ttf') format('truetype');
 }
 
 /* background image is not showing up on github site */
 :root {
-    background-image: url('../img/partchment.jpg');
+    background-image: url('img/partchment.jpg');
     background-size: 100% 100%;
     background-attachment: fixed;
 }
