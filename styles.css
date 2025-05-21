@@ -11,10 +11,11 @@
 
 /* background image is not showing up on github site */
 :root {
-    background-image: url('/partchment.jpg'); 
+    /*background-image: url('/partchment.jpg'); */
     background-size: 100% 100%;
     background-attachment: fixed;
     background-color: #00000059;
+  background: linear-gradient(90deg,#e0795a93 0%, #daa55f 50%, #c2995bcb 100%);
 }
 
 nav {
