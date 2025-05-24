@@ -1,21 +1,7 @@
 /* notes */
-@font-face {
-    font-family: 'BlackChancery';
-    src: url('Fonts/BlackChancery.regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'OldeEnglish Regular';
-    src: url('onts/OldeEnglish.ttf') format('truetype');
-}
-
-/* background image is not showing up on github site */
 :root {
-    /*background-image: url('/partchment.jpg'); */
-    background-size: 100% 100%;
-    background-attachment: fixed;
     background-color: #00000059;
-  background: linear-gradient(90deg,#e0795a93 0%, #daa55f 50%, #c2995bcb 100%);
+    background: linear-gradient(90deg, #aca7a7 5%, #d3cd7ef5 90%);
 }
 
 nav {
@@ -33,92 +19,88 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #8f0000;
+    color: #C41E3A;
     font: 1rem/1 Georgia;
 }
 
 /* The "Olde English" and "BlackChancery" is not working as intended. I have the font on my computer but it is not being utilized on the website. */
 header {
-    font-family: 'Olde Enlglish', Georgia, serif;
-    color: #8f0000;
+    font-family: Georgia, serif;
+    color: #C41E3A;
     font-size: 48px;
     margin-left: 20px;
     text-align: center;
 
-    border: #8f0000;
-    /*    padding: 2.5rem 1rem; */
+    border: #C41E3A;
     background: var(--clr-accent);
-    /*color: #fff;*/
-    box-shadow: 0 2px 6px #8f0000;
+    box-shadow: 0 2px 6px #C41E3A;
 }
 
-.dps {
-
-    color: #8f0000;
-    padding: 2.5rem 1rem;
-    background: var(--clr-accent);
-    /*color: #fff;*/
-    box-shadow: 0 2px 6px #8f0000;
-    
+img {
+    display: block;
+    margin: auto;
+    width: 25%;
 }
 
-.tank {
- 
-    color: #8f0000;
-    padding: 2.5rem 1rem;
-    background: var(--clr-accent);
-    /*color: #fff;*/
-    box-shadow: 0 2px 6px #8f0000;
-}
-
+.dps,
+.tank,
 .healer {
-    
-    color: #8f0000;
+
+    color: #C41E3A;
     padding: 2.5rem 1rem;
-    background: var(--clr-accent);
-    /*color: #fff;*/
-    box-shadow: 0 2px 6px #8f0000;
+    box-shadow: 0 2px 6px #C41E3A;
+
 }
+
 
 
 body {
     font-family: 'Georgia', Georgia;
     font-size: 18px;
-    color: rgb(0, 0, 0);
-
+    color: #C41E3A;
     padding: 2.5rem 1rem;
-    background: var(--clr-accent);
     /*color: #fff;*/
-    box-shadow: 0 2px 6px #8f0000;
+    box-shadow: 0 2px 6px #C41E3A;
 
 }
 
 section>h2 {
     font-family: 'BlackChancery', Georgia;
-    color: #8f0000;
-}
-
-p::first-line {
-    font-weight: bold;
+    color: #C41E3A;
 }
 
 footer {
-    border: #8f0000;
-    box-shadow: #8f0000;
+    border: #C41E3A;
+    box-shadow: #C41E3A;
 }
 
 /*Warcraft page code */
 
 @media (min-width:960px) {
     .Warcraft-page {
-display: flex;
-padding: 2.5rem;
-color: #8f0000;
-}
-
-/* Clear floats after the columns */
-
-}
-
+        display: flex;
+        padding: 2.5rem;
+        color: #C41E3A;
     }
-} 
+}
+
+@media (min-width:640px) {
+    .Warcraft-page {
+        display: flex;
+        padding: 1.5rem;
+        color: #C41E3A;
+    }
+}
+
+@media (any-hover :hover) {
+    a:link{
+        color:#C41E3A;
+    }
+    a:visited{
+        color: black;
+    }
+    a:hover{
+        color: rgb(96, 87, 228);
+    }
+}
+
