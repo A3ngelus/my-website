@@ -1,12 +1,15 @@
-/* notes */
+/*  Root styles and background gradient, also learned that --clr-accent is a copy-paste */
 :root {
-    background-color: #00000059;
+    --clr-accent: #C41E3A;
     background: linear-gradient(90deg, #aca7a7 5%, #d3cd7ef5 90%);
 }
 
+/* Navigation - Flexbox layout */
 nav {
     display: flex;
     justify-content: center;
+    background-color: #f8f8f8;
+    padding: 1rem;
 }
 
 nav ul {
@@ -19,88 +22,109 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #C41E3A;
+    color: var(--clr-accent);
     font: 1rem/1 Georgia;
 }
 
-/* The "Olde English" and "BlackChancery" is not working as intended. I have the font on my computer but it is not being utilized on the website. */
+/* header part */
 header {
     font-family: Georgia, serif;
-    color: #C41E3A;
+    color: var(--clr-accent);
     font-size: 48px;
-    margin-left: 20px;
     text-align: center;
-
-    border: #C41E3A;
+    padding: 1rem;
     background: var(--clr-accent);
-    box-shadow: 0 2px 6px #C41E3A;
+    color: white;
+    box-shadow: 0 2px 6px var(--clr-accent);
 }
 
+/*  image auto */
 img {
     display: block;
     margin: auto;
     width: 25%;
 }
 
+/*   Role-specific sections (Flex Container) */
 .dps,
 .tank,
 .healer {
-
-    color: #C41E3A;
+    color: var(--clr-accent);
     padding: 2.5rem 1rem;
-    box-shadow: 0 2px 6px #C41E3A;
-
+    box-shadow: 0 2px 6px var(--clr-accent);
+    
 }
 
-
-
+/*  Main body styles  */
 body {
-    font-family: 'Georgia', Georgia;
+    font-family: Georgia, serif;
     font-size: 18px;
-    color: #C41E3A;
+    color: var(--clr-accent);
+    margin: 0;
     padding: 2.5rem 1rem;
-    /*color: #fff;*/
-    box-shadow: 0 2px 6px #C41E3A;
-
+    background-color: #fff;
 }
 
-section>h2 {
-    font-family: 'BlackChancery', Georgia;
-    color: #C41E3A;
+/* section headings */
+section > h2 {
+    font-family: Georgia, serif; /* Custom font fallback */
+    color: var(--clr-accent);
 }
 
+/* footer styling */
 footer {
-    border: #C41E3A;
-    box-shadow: #C41E3A;
+    border-top: 2px solid var(--clr-accent);
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 -2px 6px var(--clr-accent);
 }
 
-/*Warcraft page code */
-
-@media (min-width:960px) {
-    .Warcraft-page {
-        display: flex;
-        padding: 2.5rem;
-        color: #C41E3A;
-    }
+/* griid Layout  */
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
 }
 
-@media (min-width:640px) {
+/* media queries - start here, went with basic values for tablets, small desktops and largers ones */
+
+/* Medium screens (tablets) */
+@media (min-width: 640px) {
     .Warcraft-page {
         display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
         padding: 1.5rem;
-        color: #C41E3A;
     }
 }
 
-@media (any-hover :hover) {
-    a:link{
-        color:#C41E3A;
+/* Large screens (desktops) */
+@media (min-width: 960px) {
+    .Warcraft-page {
+        display: flex;
+        justify-content: space-between;
+        padding: 2.5rem;
     }
-    a:visited{
-        color: black;
+}
+
+/* Extra-large screens */
+@media (min-width: 1200px) {
+    .content-grid {
+        grid-template-columns: repeat(4, 1fr);
     }
-    a:hover{
-        color: rgb(96, 87, 228);
+}
+
+/* Hover styles */
+@media (any-hover: hover) {
+    a:link {
+        color: var(--clr-accent);
+    }
+    a:visited {
+        color: #000000;
+    }
+    a:hover {
+        color: #6057e4;
     }
 }
 
